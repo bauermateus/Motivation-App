@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_red"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/infinity_button"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@color/dark_red"
+            android:src="@drawable/infinity" />
+
+        <ImageView
+            android:id="@+id/smile_button"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@color/dark_red"
+            android:src="@drawable/smile" />
+
+        <ImageView
+            android:id="@+id/sun_button"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@color/dark_red"
+            android:src="@drawable/sun" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/username_replacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/welcome_user"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/phrase_substitute"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/black_view_bar"
+        android:layout_width="128dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/phrase"
+        android:layout_centerHorizontal="true"
+        android:background="@color/darkest_red"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/new_phrase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/dark_red"
+        android:text="@string/new_phrase_button_text"
+        android:textAllCaps="true" />
+
+</RelativeLayout>
