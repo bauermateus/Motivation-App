@@ -5,6 +5,7 @@ import kotlin.random.Random
 
 data class Phrase (val description: String, val category: Int)
 
+
 class Mock {
     private val infinity = Constants.PhraseCategory.infinity
     private val sun = Constants.PhraseCategory.sun
@@ -28,7 +29,7 @@ class Mock {
     fun getPhrase(type: Int): String {
 
             val filtered = mListPhrase.filter { type == it.category || type == infinity }
-            val index = Random.nextInt(mListPhrase.size)
+            val index = Random.nextInt(filtered.size)
             return filtered[index].description
     }
 }
